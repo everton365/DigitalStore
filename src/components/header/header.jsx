@@ -93,7 +93,12 @@ function Header() {
           </button>
           <Link
             to="/DigitalStore"
-            className={currentPath === "/DigitalStore" ? "active" : "btn"}
+            className={
+              currentPath === "/DigitalStore" ||
+              currentPath === "/DigitalStore/"
+                ? "active"
+                : "btn"
+            }
           >
             Home
           </Link>
