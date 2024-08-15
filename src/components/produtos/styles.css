@@ -5,6 +5,125 @@
   outline: 0;
 }
 
-h1 {
-  height: 1500px;
+.container8 {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #000000;
+  width: 1100px;
+  max-width: 1100px;
+  background-color: #f2f2fe;
+}
+
+.container8 h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 30px;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  width: 500px;
+}
+
+.container8 span {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.flex8 {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-btn {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 950px;
+  border: 2px solid transparent;
+}
+
+.App-produto {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f2f2fe;
+}
+
+.container9 {
+  border: 2px solid transparent;
+  padding: 2px;
+  display: flex;
+  width: 800px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #f2f2fe;
+}
+
+.flex9 {
+  margin-right: 0px;
+}
+
+.grid-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 90px;
+  width: 232px;
+  height: 419px;
+  border: 2px solid transparent;
+  border-radius: 2%;
+  margin: 10px 5px;
+}
+
+.back-image {
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+#grid-tenis {
+  border: 2px solid transparent;
+  margin-left: -40px;
+  width: 262px;
+  height: 419;
+}
+
+.grid-product p {
+  margin-left: 0px;
+  margin-top: 5px;
+  font-family: "inter", sans-serif;
+  font-size: 20px;
+  font-weight: none;
+  border: 2px solid transparent;
+}
+
+.preco {
+  text-decoration: line-through;
+  border: 2px solid transparent;
+  color: #858585;
+}
+
+.mini-text {
+  margin-left: 0px;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
+  border: 2px solid transparent;
+}
+
+#grid-oferta {
+  display: flex;
+  width: 96px;
+  height: 32px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 5px, 15px, 5px, 15px;
+  border: 2px solid transparent;
 }/*# sourceMappingURL=styles.css.map */
