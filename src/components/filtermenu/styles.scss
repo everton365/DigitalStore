@@ -20,13 +20,13 @@ $color-title: #434343;
 .filter-menu {
   position: absolute;
   border: 2px solid $border;
-  margin-top: 15px;
+  margin-top: 1px;
   width: 220px;
   height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: -1080px;
+  margin-left: -1000px;
   background-color: $back-color3;
 }
 

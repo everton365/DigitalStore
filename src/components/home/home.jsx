@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../../App.css";
-import "../../index.css";
+
+import "./styles.css";
 import Header from "../header/header.jsx";
 import Footer from "../footer/footer.jsx";
 import image4 from "../image/imagetenis.png";
@@ -155,7 +155,7 @@ function Home() {
           </div>
         </section>
 
-        <section class="container8 flex8">
+        <section id="container8">
           <h2>podutos em alta</h2>
           <button>Ver todos</button>
           <img src={image18} />

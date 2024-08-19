@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "../../App.css";
 import image from "../../../public/image/Group.png";
 import image1 from "../../../public/image/DigitalStore.png";
@@ -104,14 +104,21 @@ function Header() {
           </Link>
           <Link
             to="/Produtos"
-            className={currentPath === "/Produtos" ? "active" : "btn"}
+            className={
+              currentPath === "/Produtos" || currentPath === "/CardProdutos"
+                ? "active"
+                : "btn"
+            }
           >
             Produtos
           </Link>
           <Link className="btn" to="#">
             Categorias
           </Link>
-          <Link className="btn" to="#">
+          <Link
+            to="/Carrinho"
+            className={currentPath === "/Carrinho" ? "active" : "btn"}
+          >
             Meus Pedidos
           </Link>
         </section>

@@ -16,18 +16,31 @@ $color-title: #434343;
   box-sizing: 0;
   outline: 0;
 }
-
-.container8 {
+#App {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: #000000;
-  width: 1100px;
-  max-width: $widthcontainer;
+  flex-direction: column;
+  width: 1108px;
+
   background-color: $back-color2;
 }
 
-.container8 h2 {
+.container8 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #000000;
+  width: 400px;
+
+  background-color: $back-color2;
+}
+.link {
+  text-decoration: none;
+}
+
+.flex8 h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -35,17 +48,12 @@ $color-title: #434343;
   margin-left: 30px;
   font-family: $font-primary;
   font-size: 18px;
-  width: 500px;
 }
 .container8 span {
   font-size: 18px;
   font-weight: normal;
 }
 
-.flex8 {
-  display: flex;
-  flex-direction: row;
-}
 .filter-btn {
   display: flex;
   position: absolute;
@@ -57,25 +65,24 @@ $color-title: #434343;
   border: 2px solid $border;
 }
 
-.App-produto {
+.Appproduto {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-start;
   background-color: $back-color2;
+  width: 902px;
 }
-.container9 {
-  border: 2px solid $border;
+#container9 {
   padding: 2px;
   display: flex;
-  width: 800px;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
   background-color: $back-color2;
-}
-
-.flex9 {
-  margin-right: 0px;
+  margin-left: 200px;
+  width: 902px;
 }
 
 .grid-product {
@@ -102,6 +109,14 @@ $color-title: #434343;
   margin-left: -40px;
   width: 262px;
   height: 419;
+}
+#grid-tenis1 {
+  border: 2px solid $border;
+  margin-left: -40px;
+  width: 232px;
+  height: 380;
+  transform: rotate(-28deg); /* Gira a imagem 45 graus */
+  transition: transform 0.5s; /* Adiciona uma transição suave */
 }
 
 .grid-product p {

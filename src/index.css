@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1100px;
-  width: 1105px;
+  width: 1108px;
   margin: 0 auto;
   border: none;
   background-color: #f2f2fe;
@@ -103,7 +103,7 @@ body {
 }
 
 .container a {
-  width: 102px;
+  width: 112px;
   height: 28px;
   top: 50px;
   left: 991px;
@@ -202,6 +202,7 @@ body {
 
 /*section carrossel*/
 .container3 {
+  border: 2px solid #000000;
   display: flex;
   max-width: 1100px;
   height: 550px;
@@ -209,6 +210,7 @@ body {
   border: 2px solid transparent;
   background-color: #f5f5f5;
   justify-content: center;
+  overflow: hidden;
 }
 
 .flex3 {
@@ -225,6 +227,7 @@ body {
   width: 600px;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   margin-left: 110px;
 }
 
@@ -278,7 +281,7 @@ body {
   position: absolute;
   width: 580.51px;
   height: 511.61px;
-  left: 503.25px;
+  margin-left: 320px;
   top: 166.91px;
   filter: drop-shadow(0px 4px 25px rgba(119, 15, 21, 0.08));
   transform: rotate(-19.34deg);
@@ -306,8 +309,8 @@ body {
   justify-content: center;
   width: 140px;
   height: 140px;
-  top: 212px;
-  left: 1033px;
+  margin-top: -412px;
+  margin-left: 953px;
   gap: 0px;
   opacity: 0.4px;
   position: absolute;
@@ -740,6 +743,7 @@ p {
 .container11 {
   flex-direction: row;
   height: 454px;
+  width: 1110px;
   gap: 0px;
   opacity: 0px;
   background: #1f1f1f;
@@ -806,7 +810,7 @@ li {
 
 .footer-list2 {
   border: 2px solid transparent;
-  width: 300px;
+  width: 350px;
 }
 
 h6 {
@@ -835,6 +839,7 @@ h6 {
 .roda-pe {
   background: #1f1f1f;
   display: flex;
+  width: 1110px;
   flex-direction: row;
   justify-content: center;
 }
