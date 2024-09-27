@@ -7,14 +7,12 @@ function Footer() {
     <div className="App">
       <footer>
         <section className="container11 flex11">
-          <div className="footer-logo">
-            <img src={image36} alt="logo1" />
+          <div id="footer-logo">
             <p id="text-logo">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor <br />
               incididunt ut labore et dolore.
             </p>
-            <img id="footer-image" src={image37} alt="rede-social" />
           </div>
 
           <div className="footer-list">

@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  width: 1108px;
+  margin: 0 auto;
+  border: none;
+  background-color: #f2f2fe;
+}
+
 .container11 {
   flex-direction: row;
   height: 454px;
@@ -48,18 +58,24 @@ li {
   padding: 10px 0; /* Adiciona espaçamento entre os itens da lista */
 }
 
-.footer-logo {
+#footer-logo {
+  border: 2px solid white;
   margin-left: 90px;
   border: 2px solid transparent;
   width: 400px;
 }
 
-.footer-logo img {
-  margin-top: 90px;
+#footerImage {
+  margin-top: 0px;
+  right: 0px;
+  width: 30px;
 }
 
 #footer-image {
+  display: flex;
   margin-top: 10px;
+  right: 5px;
+  width: 5px;
 }
 
 .footer-list1 {
