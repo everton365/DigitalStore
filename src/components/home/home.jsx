@@ -1,6 +1,7 @@
-import { useState } from "react";
-
+import React, { useContext } from "react";
+import AppContext from "../../context/AppContext.js";
 import "./styles.css";
+import Productos from "../../componente/produtosLoja/produtosLoja.jsx";
 import Header from "../header/header.jsx";
 import Footer from "../footer/footer.jsx";
 import image4 from "../image/imagetenis.png";
@@ -36,14 +37,12 @@ import image34 from "../../../public/image/produtos/Layer 1aa 2.png";
 import image35 from "../../../public/image/produtos/Laye 1.png";
 
 function Home() {
-  const [cartCount, setCartCount] = useState(0);
-  const addToCart = () => {
-    setCartCount(cartCount + 1);
-  };
+  const { addToCart } = useContext(AppContext);
 
   return (
     <div className="App">
       <Header />
+
       <main>
         <section className="container3 flex3">
           <div className="ofertas">
@@ -83,7 +82,7 @@ function Home() {
             </h3>
             <button>comprar</button>
             <div className="camisa">
-              <img src={image8} alt="tishu" />
+              <img id="camisa1" src={image8} alt="tishu" />
             </div>
           </div>
 
@@ -96,7 +95,7 @@ function Home() {
             </h3>
             <button>comprar</button>
             <div className="sapato">
-              <img src={image10} alt="tishu" />
+              <img id="sapato1" src={image10} alt="tishu" />
             </div>
           </div>
 
@@ -109,46 +108,46 @@ function Home() {
             </h3>
             <button>comprar</button>
             <div className="fone">
-              <img src={image12} alt="tishu" />
+              <img id="fone1" src={image12} alt="tishu" />
             </div>
           </div>
         </section>
 
-        <section class="container6">
+        <section className="container6">
           <h2>Coleções em Destaque</h2>
         </section>
 
-        <section class="container7 flex7">
-          <div class="colecao">
-            <div class="radius">
+        <section className="container7 flex7">
+          <div className="colecao">
+            <div className="radius">
               <img src={image13} alt="camisa" />
             </div>
             <p>Camisetas</p>
           </div>
 
-          <div class="colecao">
-            <div class="radius">
+          <div className="colecao">
+            <div className="radius">
               <img src={image14} alt="camisa" />
             </div>
             <p>Calça</p>
           </div>
 
-          <div class="colecao">
-            <div class="radius">
+          <div className="colecao">
+            <div className="radius">
               <img src={image15} alt="camisa" />
             </div>
             <p>Bonés</p>
           </div>
 
-          <div class="colecao">
-            <div class="radius">
+          <div className="colecao">
+            <div className="radius">
               <img src={image16} alt="camisa" />
             </div>
             <p>Headphones</p>
           </div>
 
-          <div class="colecao">
-            <div class="radius">
+          <div className="colecao">
+            <div className="radius">
               <img src={image17} alt="camisa" />
             </div>
             <p>Tênis</p>
@@ -162,130 +161,13 @@ function Home() {
         </section>
 
         <section className="container9 flex9">
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image19} alt="sale-off" />
-              <img id="grid-tenis" src={image20} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
-
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image21} alt="sale-off" />
-              <img id="grid-tenis" src={image22} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
-
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image23} alt="sale-off" />
-              <img id="grid-tenis" src={image24} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
-
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image25} alt="sale-off" />
-              <img id="grid-tenis" src={image26} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
-
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image27} alt="sale-off" />
-              <img id="grid-tenis" src={image28} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
-
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image29} alt="sale-off" />
-              <img id="grid-tenis" src={image30} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
-
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image31} alt="sale-off" />
-              <img id="grid-tenis" src={image32} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
-          <div className="grid-product">
-            <div className="back-image">
-              <img id="grid-oferta" src={image33} alt="sale-off" />
-              <img id="grid-tenis" src={image34} alt="gridtenis" />
-            </div>
-            <p>
-              <span className="mini-text">Tênis</span>
-            </p>
-            <p>K-Swiss v8 - Masculino</p>
-            <p>
-              {" "}
-              <span className="preco">$200</span> $100
-            </p>
-          </div>
+          <Productos MAX_PRODUCTS={10} produto="tenis" />
         </section>
 
         <section className="container10">
           <div className="tenis1">
             <div id="elipse"></div>
-            <img src={image35} alt="tenis1" />
+            <img id="tenis01" src={image35} alt="tenis1" />
           </div>
 
           <div className="text-final">

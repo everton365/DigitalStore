@@ -1,4 +1,5 @@
 import "./styles.css";
+import { Link, useLocation } from "react-router-dom";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import tenisNike from "../image/imagetenis.png";
@@ -67,7 +68,9 @@ function CardProdutos() {
             <div className="radiaus-color3"></div>
             <div className="radiaus-color4"></div>
           </div>
-          <button>COMPRAR</button>
+          <Link to="/Carrinho">
+            <button>COMPRAR</button>
+          </Link>
         </div>
       </section>
 

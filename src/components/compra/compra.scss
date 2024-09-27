@@ -1,0 +1,212 @@
+.product-card1 {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+
+  background-color: #f2f2fe;
+  padding: 20px 0px 0px 10px;
+  cursor: pointer;
+}
+
+#card__image {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.card__infos {
+  padding: 10px;
+}
+
+.card__price {
+  font-size: 30px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card__title {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.button__add-cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  margin: 12px 15px;
+  color: #0c5dd6;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .button__add-cart {
+  display: flex;
+}
+
+$font-primary: "inter", sans-serif;
+$border: transparent;
+$width: 100%;
+$height: 875px;
+$color-primary: #c92071;
+$widthcontainer: 1100px;
+$color-text-btn: #ffff;
+$back-color: #f5f5f5;
+$back-color2: #dfdfff;
+$back-color3: #ffffff;
+$color-title: #434343;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  outline: 0;
+  font-family: $font-primary;
+}
+
+.carrinho1 {
+  background-color: $back-color;
+  height: 500px;
+  padding-left: 2%;
+}
+
+#refi {
+  border: $border;
+  background-color: transparent;
+  color: #5a5a5a;
+  font-weight: normal;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 800px;
+  padding-top: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #939393;
+}
+
+.title h1 {
+  font-size: 14px;
+  margin-right: 40%;
+}
+.title h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 40px;
+}
+
+#grid-tenisCar {
+  background-color: $back-color2;
+  border-radius: 10px;
+  height: 104px;
+  width: 127px;
+}
+.image {
+  border: $border;
+  width: 289px;
+  height: 40px;
+  margin-left: 2%;
+}
+.image h2 {
+  font-size: 18px;
+}
+.produtoRef {
+  display: flex;
+  flex-direction: row;
+}
+.carrinho2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-ref {
+  border: $border;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: -440px;
+  height: 104px;
+  gap: 4%;
+}
+
+.org {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 11%;
+}
+
+.contidade {
+  border: $border;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60px;
+}
+
+#btnRemove button {
+  border: none;
+  width: 80px;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: -10px;
+  text-decoration: underline;
+}
+#unitario {
+  border: $border;
+  text-decoration: line-through;
+  width: 100px;
+}
+.btn-ref p {
+  border: $border;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+}
+
+.btn-ref button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #939393;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+
+.btn-ref span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}

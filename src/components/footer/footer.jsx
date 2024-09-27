@@ -1,6 +1,6 @@
-import "../../App.css";
 import image36 from "../../../public/image/logo.png";
 import image37 from "../../../public/image/Group 53511.png";
+import "./footer.css";
 
 function Footer() {
   return (

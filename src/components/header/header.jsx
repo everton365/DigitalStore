@@ -1,10 +1,13 @@
-import { useState } from "react";
-import "../../App.css";
+import { useState, useContext } from "react";
+import { BsSearch } from "react-icons/bs";
 import image from "../../../public/image/Group.png";
 import image1 from "../../../public/image/DigitalStore.png";
-import image2 from "../../../public/image/Search1.png";
+
 import image3 from "../../../public/image/Group 53581.png";
 import { Link, useLocation } from "react-router-dom";
+import fetchProducts from "../../api/fetchProducts";
+import AppContext from "../../context/AppContext";
+import "./header.css";
 
 function Header() {
   const location = useLocation();
@@ -12,10 +15,28 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenSearch, setIsOpenSearch] = useState(false);
   const [isOpenDiv, setOpenDiv] = useState(false);
-  const [cartCount, setCartCount] = useState(0);
-  const addToCart = () => {
-    setCartCount(cartCount + 1);
+
+  const {
+    setProducts,
+    setLoading,
+    cartCount,
+    setSearchValue,
+    searchValue,
+    setCopySearchValue,
+  } = useContext(AppContext);
+
+  const handleSearch = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+
+    const products = await fetchProducts(searchValue);
+
+    setProducts(products);
+    setLoading(false);
+    setCopySearchValue(searchValue);
+    setSearchValue("");
   };
+
   const toggleSearch = () => {
     setIsOpenSearch(!isOpenSearch);
     setOpenDiv(!isOpenDiv);
@@ -64,33 +85,36 @@ function Header() {
           <div id="logo">
             <img src={image} alt="logo1" />
             <img src={image1} alt="logo" />
-            <img
-              className="busca"
-              src={image2}
-              alt="search1"
-              onClick={toggleSearch}
-            />
           </div>
+          <div className="container-form">
+            <form id="search-bar" onSubmit={handleSearch}>
+              {name}
+              <input
+                type="search"
+                value={searchValue}
+                placeholder="Buscar produtos"
+                className="search__input"
+                onChange={({ target }) => setSearchValue(target.value)}
+                required
+              />
 
-          <input
-            className={`search ${isOpenSearch ? "openSearch" : ""}`}
-            type="text"
-            name="nome"
-            placeholder="  Pesquisar produtos..."
-          />
+              <button type="submit" id="search__button">
+                <BsSearch />
+              </button>
+            </form>
+          </div>
           <a href="#">Cadastre-se</a>
-          <button type="submit">Entrar</button>
+          <Link to="/Login">
+            <button type="submit">Entrar</button>
+          </Link>
           <div className="carrinho">
             <img id="carrinho" src={image3} alt="logo-carrinho" />
-            <span>{cartCount}</span>
+            <span id="span">{cartCount}</span>
           </div>
         </section>
       </header>
       <main>
         <section className="container2 flex2">
-          <button className="bt" onClick={addToCart}>
-            Adicionar ao Carrinho,
-          </button>
           <Link
             to="/DigitalStore"
             className={
@@ -112,12 +136,15 @@ function Header() {
           >
             Produtos
           </Link>
-          <Link className="btn" to="#">
+          <Link
+            to="/categorias"
+            className={currentPath === "/categorias" ? "active" : "btn"}
+          >
             Categorias
           </Link>
           <Link
-            to="/Carrinho"
-            className={currentPath === "/Carrinho" ? "active" : "btn"}
+            to="/Compra"
+            className={currentPath === "/carrinho" ? "active" : "btn"}
           >
             Meus Pedidos
           </Link>

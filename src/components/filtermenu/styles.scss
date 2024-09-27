@@ -18,15 +18,17 @@ $color-title: #434343;
 }
 
 .filter-menu {
+  display: flex;
   position: absolute;
+  margin-top: 119px;
   border: 2px solid $border;
-  margin-top: 1px;
+
   width: 220px;
-  height: 900px;
+  height: 884px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: -1000px;
+
   background-color: $back-color3;
 }
 

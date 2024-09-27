@@ -24,7 +24,7 @@ body {
 }
 
 .bt {
-  display: none;
+  display: flex;
 }
 
 /* Header styles */

@@ -31,7 +31,7 @@ function FilterButton() {
           display: "flex",
           justifyContent: "flex-end",
           position: "absolute",
-          marginTop: "-90px",
+          marginTop: "-60px",
           width: "300px",
           backgroundColor: "#ffff", // Cor de fundo
           color: "#000000", // Cor do texto

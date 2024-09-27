@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  outline: 0;
+  font-family: "inter", sans-serif;
+}
+
+.carrinho1 {
+  background-color: #f5f5f5;
+  height: 500px;
+  padding-left: 2%;
+}
+
+#refi {
+  border: transparent;
+  background-color: transparent;
+  color: #5a5a5a;
+  font-weight: normal;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 800px;
+  padding-top: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #939393;
+}
+
+.title h1 {
+  font-size: 14px;
+  margin-right: 40%;
+}
+
+.title h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 40px;
+}
+
+#grid-tenisCar {
+  background-color: #dfdfff;
+  border-radius: 10px;
+  height: 104px;
+  width: 127px;
+}
+
+.image {
+  border: transparent;
+  width: 289px;
+  height: 40px;
+  margin-left: 2%;
+}
+
+.image h2 {
+  font-size: 18px;
+}
+
+.produtoRef {
+  display: flex;
+  flex-direction: row;
+}
+
+.carrinho2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-ref {
+  border: transparent;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 104px;
+  gap: 4%;
+}
+
+.org {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 11%;
+}
+
+.contidade {
+  border: transparent;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60px;
+}
+
+#btnRemove button {
+  border: none;
+  width: 80px;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: -10px;
+  text-decoration: underline;
+}
+
+#unitario {
+  border: transparent;
+  text-decoration: line-through;
+  width: 100px;
+}
+
+.btn-ref p {
+  border: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+}
+
+.btn-ref button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #939393;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+
+.btn-ref span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}/*# sourceMappingURL=carrinho.css.map */

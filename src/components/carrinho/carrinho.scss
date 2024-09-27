@@ -1,0 +1,146 @@
+$font-primary: "inter", sans-serif;
+$border: transparent;
+$width: 100%;
+$height: 875px;
+$color-primary: #c92071;
+$widthcontainer: 1100px;
+$color-text-btn: #ffff;
+$back-color: #f5f5f5;
+$back-color2: #dfdfff;
+$back-color3: #ffffff;
+$color-title: #434343;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  outline: 0;
+  font-family: $font-primary;
+}
+
+.carrinho1 {
+  background-color: $back-color;
+  height: 500px;
+  padding-left: 2%;
+}
+
+#refi {
+  border: $border;
+  background-color: transparent;
+  color: #5a5a5a;
+  font-weight: normal;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 800px;
+  padding-top: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #939393;
+}
+
+.title h1 {
+  font-size: 14px;
+  margin-right: 40%;
+}
+.title h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 40px;
+}
+
+#grid-tenisCar {
+  background-color: $back-color2;
+  border-radius: 10px;
+  height: 104px;
+  width: 127px;
+}
+.image {
+  border: $border;
+  width: 289px;
+  height: 40px;
+  margin-left: 2%;
+}
+.image h2 {
+  font-size: 18px;
+}
+.produtoRef {
+  display: flex;
+  flex-direction: row;
+}
+.carrinho2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-ref {
+  border: $border;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 104px;
+  gap: 4%;
+}
+
+.org {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 11%;
+}
+
+.contidade {
+  border: $border;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60px;
+}
+
+#btnRemove button {
+  border: none;
+  width: 80px;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: -10px;
+  text-decoration: underline;
+}
+#unitario {
+  border: $border;
+  text-decoration: line-through;
+  width: 100px;
+}
+.btn-ref p {
+  border: $border;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+}
+
+.btn-ref button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #939393;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+
+.btn-ref span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
