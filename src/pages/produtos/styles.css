@@ -1,0 +1,29 @@
+.produtos {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: #f2f2fe;
+  padding: 20px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-left: 240px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f2f2fe;
+}
+
+.page h1 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-top: 50px;
+  font-weight: normal;
+  font-family: "inter", sans-serif;
+  margin-left: 20px;
+}/*# sourceMappingURL=styles.css.map */

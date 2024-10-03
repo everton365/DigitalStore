@@ -1,0 +1,13 @@
+.slide-item{
+    width: 100%;
+    right: 350px;
+    gap: 20px;
+    object-fit: cover;
+}
+.container-item {
+    border: 2px solid #000;
+   width: 100%;
+   max-width: 1100px;
+   margin: 0 auto;
+   
+}

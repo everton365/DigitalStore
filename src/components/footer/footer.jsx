@@ -7,6 +7,7 @@ function Footer() {
     <div className="App">
       <footer>
         <section className="container11 flex11">
+          <img id="footer01" src={image36} alt="footer" />
           <div id="footer-logo">
             <p id="text-logo">
               Lorem ipsum dolor sit amet, consectetur <br />
@@ -14,6 +15,7 @@ function Footer() {
               incididunt ut labore et dolore.
             </p>
           </div>
+          <img id="footer02" src={image37} alt="footer" />
 
           <div className="footer-list">
             <ul>

@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./styles.css";
+import fetchProducts from "../../api/fetchProducts";
+import AppContext from "../../context/AppContext.js";
 
 const FilterMenu = () => {
+  const { setProducts } = useContext(AppContext);
   const [filters, setFilters] = useState({
     adiddas: false,
     calenciaga: false,
@@ -11,9 +14,11 @@ const FilterMenu = () => {
     casual: false,
     esporteLazer: false,
     corrida: false,
-    masculino: false,
-    feminino: false,
+    tenismasculino: false,
+    tenisfeminino: false,
     unissex: false,
+    novo: false,
+    usado: false,
   });
 
   const handleChange = (event) => {
@@ -24,8 +29,25 @@ const FilterMenu = () => {
     }));
   };
 
-  const applyFilters = () => {
-    console.log("Filtros aplicados:", filters);
+  const applyFilters = async () => {
+    try {
+      // Pegue os filtros que estão marcados
+      const selectedFilters = Object.keys(filters).filter(
+        (key) => filters[key]
+      );
+
+      // Verificar se nenhum filtro foi selecionado e definir um valor padrão
+      const query =
+        selectedFilters.length > 0 ? selectedFilters : ["tenis nike"];
+
+      // Chame a API importada passando os filtros selecionados ou o valor padrão
+      const products = await fetchProducts(query);
+
+      console.log("Produtos retornados:", products);
+      setProducts(products);
+    } catch (error) {
+      console.error("Erro ao buscar produtos:", error);
+    }
   };
 
   return (
@@ -113,8 +135,8 @@ const FilterMenu = () => {
           <label>
             <input
               type="checkbox"
-              name="masculino"
-              checked={filters.masculino}
+              name="tenismasculino"
+              checked={filters.tenismasculino}
               onChange={handleChange}
             />
             Masculino
@@ -122,8 +144,8 @@ const FilterMenu = () => {
           <label>
             <input
               type="checkbox"
-              name="feminino"
-              checked={filters.feminino}
+              name="tenisfeminino"
+              checked={filters.tenisfeminino}
               onChange={handleChange}
             />
             Feminino

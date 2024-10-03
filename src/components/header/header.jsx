@@ -103,9 +103,11 @@ function Header() {
               </button>
             </form>
           </div>
-          <a href="#">Cadastre-se</a>
-          <Link to="/Login">
-            <button type="submit">Entrar</button>
+          <Link to="/cadastro">Cadastre-se</Link>
+          <Link to="/Login" className="entrar">
+            <button type="submit" id="btn-entrar">
+              Entrar
+            </button>
           </Link>
           <div className="carrinho">
             <img id="carrinho" src={image3} alt="logo-carrinho" />
