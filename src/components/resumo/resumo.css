@@ -1,0 +1,20 @@
+.container-resumo{
+    display: flex;
+    margin-top: -300px;
+    margin-left: 840px;
+    flex-direction: column;
+    border: 2px solid #0000;
+    width: 220px ;
+    right: 600px;
+    background-color: white;
+   
+}
+.container-section-resumo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.container-resumo h1 {
+    font-size: 18px;
+}

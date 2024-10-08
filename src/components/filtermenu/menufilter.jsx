@@ -72,7 +72,7 @@ const FilterMenu = () => {
               checked={filters.calenciaga}
               onChange={handleChange}
             />
-            Calenciaga
+            Balenciaga
           </label>
           <label>
             <input

@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import AppContext from "../../context/AppContext.js";
 import Loading from "../../components/Loading/Loading.jsx";
 import Header from "../../components/header/header.jsx";
+import Resumo from "../../components/resumo/resumo.jsx";
 
 function CompraPage() {
   const { productId } = useParams();
@@ -116,15 +117,16 @@ function CompraPage() {
                   </div>
                 </div>
                 <p>
-                  <span id="unitario">R${product.price}uc</span>
+                  <span id="unitario">R${product.price}</span>
                   {unitario}
                 </p>
                 <p>
                   <span id="unitario">R$ {valorTotal}</span>
-                  {valorTotal1}
+                  R${valorTotal1}
                 </p>
               </div>
             </div>
+            <Resumo valor1={valorTotal1} />
           </div>
         </div>
       </section>

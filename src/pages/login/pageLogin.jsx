@@ -53,6 +53,7 @@ export default App;
 // Estilos com styled-components
 const Container = styled.div`
   display: flex;
+  margin-top: -80px;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -63,6 +64,7 @@ const LoginBox = styled.div`
   background-color: #ffffff;
   padding: 40px;
   width: 100%;
+
   max-width: 400px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);

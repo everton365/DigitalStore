@@ -145,7 +145,7 @@ function Header() {
             Categorias
           </Link>
           <Link
-            to="/Compra"
+            to="/CardProdutos"
             className={currentPath === "/carrinho" ? "active" : "btn"}
           >
             Meus Pedidos
