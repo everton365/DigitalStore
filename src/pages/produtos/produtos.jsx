@@ -22,7 +22,7 @@ function Produtos() {
   } = useContext(AppContext);
 
   const navigate = useNavigate();
-  const MAX_PRODUCTS = 10;
+  const MAX_PRODUCTS = 16;
   useEffect(() => {
     fetchProducts(" tenis nike").then((response) => {
       setProducts(response);
