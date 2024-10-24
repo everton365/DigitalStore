@@ -70,5 +70,21 @@
 }
 #bt{
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
+color: #ffff;
+font-weight: bold;
+  display: flex;
+  width: 150px;
+  height: 34px;
+ margin: 0 auto;
+ margin-bottom: 10px;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "inter", sans-serif;
+  font-size: 12px;
+  background-color: #c92071;
 }

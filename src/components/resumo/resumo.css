@@ -1,10 +1,10 @@
 .container-resumo{
     display: flex;
-    margin-top: -300px;
-    margin-left: 840px;
+    margin-top: -425px;
+    margin-left: 820px;
     flex-direction: column;
     border: 2px solid #0000;
-    width: 220px ;
+    width: 250px ;
     right: 600px;
     background-color: white;
    
@@ -13,8 +13,53 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    gap: 40px;
 }
 
 .container-resumo h1 {
-    font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 13px;
+    font-size: 13px;
+    border-bottom: 2px solid #aeaeae;
+    margin-bottom: 20px;
 }
+
+#bt1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  color: #ffff;
+  font-weight: bold;
+    display: flex;
+    width: 150px;
+    height: 34px;
+   margin: 0 auto;
+   margin-bottom: 10px;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: "inter", sans-serif;
+    font-size: 12px;
+    background-color: rgba(246, 170, 28, 1);
+    
+  }
+  #total {
+    font-weight: bold;
+    color: black;
+  }
+  #total1 {
+    font-weight: bold;
+    color:  #c92071;
+  }
+  .parcelas{
+    font-size: 10px;
+    color: #807f7f;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 10px;
+  }

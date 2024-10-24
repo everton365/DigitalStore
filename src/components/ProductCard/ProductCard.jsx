@@ -23,7 +23,9 @@ function ProductCard({ data, onBuyClick }) {
       <div className="card__infos">
         <h2 className="card__price">{formatCurrency(price, "BRL")}</h2>
         <h2 className="card__title">{title}</h2>
-        <button onClick={() => onBuyClick(data.id)}>Comprar</button>
+        <button id="bt" onClick={() => onBuyClick(data.id)}>
+          Comprar
+        </button>
         <button id="bt" onClick={addToCart}>
           Adicionar a Carrinho
         </button>

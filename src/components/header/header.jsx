@@ -129,9 +129,9 @@ function Header() {
             Home
           </Link>
           <Link
-            to="/Produtos"
+            to="/categorias"
             className={
-              currentPath === "/Produtos" || currentPath === "/CardProdutos"
+              currentPath === "/categorias" || currentPath === "/CardProdutos"
                 ? "active"
                 : "btn"
             }
@@ -139,8 +139,8 @@ function Header() {
             Produtos
           </Link>
           <Link
-            to="/categorias"
-            className={currentPath === "/categorias" ? "active" : "btn"}
+            to="/Produtos"
+            className={currentPath === "/Produtos" ? "active" : "btn"}
           >
             Categorias
           </Link>

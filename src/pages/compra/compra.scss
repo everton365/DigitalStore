@@ -85,7 +85,7 @@ $color-title: #434343;
 
 .carrinho1 {
   background-color: $back-color;
-  height: 500px;
+  height: 540px;
   padding-left: 2%;
 }
 
@@ -100,21 +100,25 @@ $color-title: #434343;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 800px;
-  padding-top: 100px;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  width: 780px;
+  padding-right: 30px;
   border-bottom: 2px solid #939393;
+  margin-bottom: 20px;
 }
 
 .title h1 {
   font-size: 14px;
-  margin-right: 40%;
+  margin-right: 30%;
 }
-.title h3 {
+#fixh3 {
+  border: 2px solid #0000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   font-size: 14px;
   font-weight: normal;
-  margin-left: 40px;
+  margin-left: 30px;
+  margin-bottom: -60px;
 }
 
 #grid-tenisCar {
@@ -124,8 +128,8 @@ $color-title: #434343;
   width: 127px;
 }
 .image {
-  border: $border;
-  width: 289px;
+  border: 2px solid #0000;
+  width: 229px;
   height: 40px;
   margin-left: 2%;
 }
@@ -147,7 +151,7 @@ $color-title: #434343;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-left: -440px;
+  margin-left: -400px;
   height: 104px;
   gap: 4%;
 }
@@ -209,4 +213,10 @@ $color-title: #434343;
   height: 40px;
   width: 40px;
   border-radius: 5px;
+}
+.produtosCompra {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin-top: 0px;
 }
