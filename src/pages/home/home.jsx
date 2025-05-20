@@ -20,7 +20,7 @@ import image16 from "../../../public/image/coleçao/Group 535867.png";
 import image17 from "../../../public/image/coleçao/Group 535868.png";
 import image18 from "../../../public/image/Line.png";
 import image35 from "../../../public/image/produtos/Laye 1.png";
-import Carrossel from "../../components/carrossel/carrossel.jsx";
+
 
 function Home() {
   const { addToCart } = useContext(AppContext);
@@ -160,9 +160,7 @@ function Home() {
           <img src={image18} />
         </section>
 
-        <section className="container9 flex9">
-          <Productos MAX_PRODUCTS={10} produto="tenis" />
-        </section>
+      
 
         <section className="container10">
           <div className="tenis1">
